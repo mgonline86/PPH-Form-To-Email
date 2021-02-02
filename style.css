@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Calibri", sans-serif;
+}
+section {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 850px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #00000010;
+  background-color: white;
+  border-radius: 8px;
+  margin: 20px;
+}
+.form-group {
+  width: 90%;
+  max-width: 850px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+input,
+.form-group textarea {
+  width: 80%;
+  font-size: 16px;
+  margin-top: 5px;
+  max-width: 700px;
+}
+
+textarea {
+  resize: vertical;
+}
+button[type="submit"] {
+  width: 90%;
+  max-width: 200px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bolder;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  color: rgb(75, 189, 255);
+  background-color: rgb(103, 107, 110);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease background-color;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(214, 226, 236);
+}
+
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+  z-index: 1;
+}
+#status.success {
+  background-color: rgb(211, 250, 153);
+  animation: status 5s ease forwards;
+}
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 5s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+#testArea,
+#testArea input {
+  background-color: rgba(255, 99, 71, 0.281);
+  padding: 5px;
+}
+
+ul {
+  padding-left: 50px;
+  font-weight: bold;
+}
+div {
+  margin: 20px;
+}
+#coverImage {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#message {
+  display: flex;
+  flex-direction: column;
+}
+
+#midImage {
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+img {
+  padding: 5px;
+}
+
+input,
+input:focus {
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+label {
+  font-weight: bold;
+}

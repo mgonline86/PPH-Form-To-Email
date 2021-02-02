@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form to E-mail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div id="coverImage">
+                <img src="./A9R9115.png" alt="Cover Photo">
+            </div>
+            <div>
+                <ul>
+                    <li>Mortgages | Self-Employed Income</li>
+                    <li>Alternative Lending | Difficulty Qualifying | All Credit Types</li>
+                    <li>All Purposes | Purchase | Consolidate Debts | Additional Funds </li>
+                </ul>
+            </div>
+            <div>
+                <p style="color: rgb(51, 51, 153);"><strong>Alternate Mortgage Options</strong></p>
+                <p>The past year has brought us to face challenges and changes. Are you looking for a mortgage,
+                    or had difficulty qualifying? Working with a broker has advantages to individuals in the
+                    category of self-employed, credit challenged, or difficulty qualifying. In this situation, a broker
+                    may help where your bank can not.</p>
+            </div>
+
+            <div id="midImage">
+                <img src="./A9R9117.jpg" alt="A9R9117">
+                <img src="./A9R9119.jpg" alt="A9R9119">
+                <img src="./A9R911B.jpg" alt="A9R911B">
+            </div>
+            <div>
+                <p>Financing is offered in all provinces from a network of lenders. Submit the form, and we’ll be
+                    in contact.</p>
+            </div>
+            <form id="form1">
+                </div>
+                <div class="form-group">
+                    <label for="firstName">First Name &nbsp;</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name &nbsp;</label>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email &nbsp;</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="status"></div>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
